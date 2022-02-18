@@ -10,13 +10,13 @@
 @import "modules/notes.css";
 
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #2d9ed0;
+  --ifm-color-primary-dark: #2d9ed0;
+  --ifm-color-primary-darker:#003a6c;
+  --ifm-color-primary-darkest: #003163;
+  --ifm-color-primary-light: #2a9bcd;
+  --ifm-color-primary-lighter: #2899cb;
+  --ifm-color-primary-lightest: #1f90c2;
   --ifm-code-font-size: 95%;
 }
 
@@ -36,33 +36,32 @@ table {
     margin-bottom: 0px;
 }
 
-.ph.cmd {
-  font-family: revert;
-  background-color: unset;
-}
-
 .pre {
   background-color: var(--ifm-pre-background);
   border-radius: var(--ifm-pre-border-radius);
   color: var(--ifm-pre-color);
-  font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+  /*font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);*/
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
   margin: 0 0 var(--ifm-spacing-vertical);
   overflow: auto;
   padding: var(--ifm-pre-padding);
   word-wrap: normal;
   display: block;
-  font-family: monospace;
+  /*font-family: monospace;*/
   white-space: pre-wrap;
 }
 
-.ph:not(.b):not(.i):not(.u) {
+.ph {
     display: inline;
     background-color: var(--ifm-pre-background);
     border-radius: var(--ifm-pre-border-radius);
     color: var(--ifm-pre-color);
-    font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+    /*font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);*/
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
     word-wrap: normal;
-    font-family: monospace;
+    /*font-family: monospace;*/
     white-space: pre-wrap;
 }
 
@@ -82,4 +81,252 @@ table {
 /* Wrap long lines of text in codeblocks */
 code {
   white-space: pre-wrap;
+}
+
+/*------- Updated css Bharathi-----------*/
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px !important;
+}
+
+.navbar__title {
+font-size: 21px !important;
+	color: #525d6d;
+}
+
+table.table ol > li {
+list-style-type: numeric;
+}
+
+.container div, .container ol li, .container p {
+	margin-bottom: 4px !important;
+	margin-top: 4px !important;
+}
+.container h1 span.ph, h1 {
+  font-size: 20px !important;
+  color: #2d9ed0;
+}
+.container h2 {
+  font-size: 18px !important;
+  color: #2d9ed0;
+}
+.markdown>h3 {
+  font-size: 16px !important;
+  color: #2d9ed0 !important;
+}
+.container h2, .markdown>h2 { 
+  font-size: 18px !important;
+  color: #2d9ed0;
+}
+.container h2 span {
+	font-size: 18px;
+	font-weight: bold;
+}
+header h1 span.ph {
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.container div {
+  font-size: 14px;
+}
+
+.container ol li {
+  font-size: 14px;  
+}
+.container ul li {
+  text-indent: 0;
+}
+
+/*Add Overview caption*/
+.context:not(:empty):before { 
+content: "Overview \A"; 
+white-space: pre;
+font-weight: bold; 
+}
+.prereq::before { 
+content: "Prerequisites \A"; 
+white-space: pre;
+font-weight: bold; 
+}
+
+.steps::before { 
+content: "Steps \A"; 
+white-space: pre;
+font-weight: bold; 
+margin-left: -32px;
+display: inline-block;
+margin-top: 10px;
+}
+
+.menu__list li a {
+  font-size: 14px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;  
+}
+.menu__list li {
+	list-style-type: none;
+}
+
+.menu__list li a.menu__link.menu__link--active {
+  color: #2d9ed0;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-alpha !important;
+}
+ol ol ol {
+  list-style-type: lower-roman !important;
+}
+
+ol ol ol ol {
+  list-style-type: upper-alpha !important;
+}
+table.table thead.thead tr th {
+  background: #aec9d6; 
+  font-weight: bold; 
+  padding: 12px;
+  text-align: left;
+}
+
+table.table caption {
+  text-align: left;
+}
+
+.fig.fignone {
+  margin-left: 0;
+}
+
+ul ul ul ul {
+  list-style-type: circle !important;
+}
+
+table.table td {
+  text-align: left;
+}
+
+div.note.note_note, 
+div.note.note_trouble {
+  font-size: 14px;
+  text-align: left;
+  background-color: #f2f2f2 !important;
+  color: #4d4d4d;
+  border-radius: 0;
+  border-left: 6px solid #2d9ed0;
+}
+
+table.table tbody tr td.entry div.note.note_note span.note__title{
+  position: relative;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px !important;
+}
+
+div.note.note_note a{  
+  color: #2d9ed0 !important;
+}
+
+span.note__title, span.ph.uicontrol {
+  color: #6a737d !important;
+}
+div.note.note_note {
+	color: #000;
+}
+div.note.note_note p, div.note.note_note ul li, div.note.note_note div.p {
+	color: #000;
+}
+
+figcaption, figcaption span.fig--title-label  {
+  font-size: 10px;
+  font-style: italic;
+}
+.ph, .pre {
+  background-color: transparent !important;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+span.ph.uicontrol {
+  font-weight: bold;
+}
+
+img.image {
+  border: 1px solid #dadde1;
+}
+
+ol li span img.image {
+	border: 1px solid #dadde1 !important;
+}
+
+.table td img.image {
+  border: 1px solid #dadde1;
+}
+
+div.pagination-nav__label {
+  color: #2d9ed0;
+}
+
+.itemgroup.info {
+    margin-top: 0 !important;
+}
+
+ol li.li.step {
+    padding-left: 6px;
+}
+
+ul li p a, div a{
+  color: #2d9ed0;
+}
+ul li a.table-of-contents__link.table-of-contents__link--active, ul li a.table-of-contents__link:hover {
+  color: #2d9ed0;
+}
+ul li p a:hover, div a:hover {
+  color: #2d9ed0;
+}
+
+.pagination-nav__link:hover {
+  border-color: #2d9ed0 !important;
+}
+
+.container p, .markdown li > p {
+  margin-top: 4px !important;
+  margin-bottom: 10px !important;
+}
+
+div.note, div.note *, div.note span.ph {
+color: #000;
+}
+button[type="button"].clean-btn {
+	background-color: #2d9ed0;
+}
+
+/* Simple table - Choice table*/
+table.simpletable.choicetable{
+	border: none;
+}
+
+table.simpletable.choicetable tr th[scope="col"]{
+  background: #aec9d6;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left !important;
+}
+
+table.simpletable.choicetable colgroup>col[style]:first-child{
+	width:30% !important; 
+	max-width:30% !important; 
+	min-width:20%;
+}
+table.simpletable.choicetable colgroup>col[style]:last-child{
+	width:70% !important; 
+	max-width:70% !important; 
+	min-width:20%;
+}
+
+/* Figure */
+.fig > img.image {
+  border: 1px solid #2d9ed0;
 }
