@@ -2,9 +2,9 @@ module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/Modules/MWWHELP/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Logo.png',
   organizationName: 'your-org', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -13,17 +13,27 @@ module.exports = {
 //      indexName: 'YOUR_INDEX_NAME',
 //    },
     navbar: {
-      title: 'My Site',
+      title: 'Masterworks',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Masterworks',
+        src: 'img/Logo.png',
       },
-      items: [],
+      items: [
+      {
+          href: '#',
+          className: 'forprint',
+          // Only one of "to" or "href" should be used
+          // href: 'https://www.facebook.com',
+          label: 'Print',
+          position: 'right',
+          //activeBaseRegex: 'docs/(next|v8)',
+        },
+      ],
     },
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()}.`,
+      copyright: `Copyright © ${new Date().getFullYear()}. Aurigo Software Technologies Inc.`,
     },
   },
   presets: [
