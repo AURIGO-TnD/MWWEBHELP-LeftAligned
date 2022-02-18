@@ -1,47 +1,48 @@
 /* Import icons/font. */
 @font-face {
-  font-family: icomoon;
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
   src: url("https://jorsek.github.io/pdfgen.github.io/fonts/note_icons/fonts/icomoon.ttf") format("truetype");
 }
 /* Style the font containing icons preceding note captions. */
 .note__title::before {
   display: inline-block;
-  font-family: icomoon;
+  /*font-family: icomoon;*/
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 13px;
   padding-right: 3.5px;
 }
 .note_note > .note__title::before {
-  content: "\e906";
+  /*content: "\e906";*/
 }
 .note_trouble > .note__title::before {
-  content: "\e901";
+  /*content: "\e901";*/
 }
 .note_tip > .note__title::before {
-  content: "\e908";
+  /*content: "\e908";*/
 }
 .note_fastpath > .note__title::before {
-  content: "\e905";
+  /*content: "\e905";*/
 }
 .note_important > .note__title::before {
-  content: "\e90a";
+  /*content: "\e90a";*/
 }
 .note_remember > .note__title::before {
-  content: "\e907";
+  /*content: "\e907";*/
 }
 .note_restriction > .note__title::before {
-  content: "\e900";
+  /*content: "\e900";*/
 }
 .note_attention > .note__title::before {
-  content: "\e902";
+  /*content: "\e902";*/
 }
 .note_caution > .note__title::before {
-  content: "\e904";
+  /*content: "\e904";*/
 }
 .note_warning > .note__title::before {
-  content: "\e909";
+  /*content: "\e909";*/
 }
 .note_danger > .note__title::before {
-  content: "\e903";
+  /*content: "\e903";*/
 }
 
 /* All notes */
@@ -53,7 +54,8 @@ div.note {
   word-wrap: break-word;
   line-height: 1.5em;
   box-sizing: border-box;
-  font-family: "Roboto", Helvetica, Arial;
+  /*font-family: "Roboto", Helvetica, Arial;*/
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
   margin-bottom: 1em;
   border-color: var(--ifm-alert-border-color);
   border-width: var(--ifm-alert-border-width);
