@@ -12,7 +12,11 @@ module.exports = {
 //      apiKey: 'YOUR_API_KEY',
 //      indexName: 'YOUR_INDEX_NAME',
 //    },
-    
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'Masterworks',
       logo: {
@@ -37,11 +41,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()}. Aurigo Software Technologies Inc.`,
     },
   },
-  colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
-    },
+  
   presets: [
     [
       '@docusaurus/preset-classic',
