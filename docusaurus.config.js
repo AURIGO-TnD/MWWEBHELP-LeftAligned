@@ -44,9 +44,7 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // In order to display a link to edit your documents, please change this value.
-          // Refer to Docusaurus v2 documentation for more info.
-          // editUrl: 'http://easydita.com',
+          breadcrumbs: false,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
