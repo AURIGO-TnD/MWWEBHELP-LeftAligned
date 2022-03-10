@@ -37,6 +37,11 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()}. Aurigo Software Technologies Inc.`,
     },
   },
+  colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
   presets: [
     [
       '@docusaurus/preset-classic',
