@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/Modules/MWWHELP/',
   onBrokenLinks: 'throw',
-  favicon: 'img/Logo.png',
+  favicon: 'img/Favicon.png',
   organizationName: 'your-org', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
