@@ -2,7 +2,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/Modules/MWWHELP/',
+  baseUrl: '/Modules/MWWHELP/sv-SE/',
   onBrokenLinks: 'throw',
   favicon: 'img/Favicon.png',
   organizationName: 'your-org', // Usually your GitHub org/user name.
