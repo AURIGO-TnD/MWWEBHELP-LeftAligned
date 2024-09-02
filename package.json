@@ -19,6 +19,9 @@
     "react": "latest",
     "react-dom": "latest"
   },
+  "resolutions": {
+    "cheerio": "1.0.0-rc.12"
+    },
   "browserslist": {
     "production": [
       ">0.2%",
